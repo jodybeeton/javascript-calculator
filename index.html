@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JAVASCRIPT-CALCULATOR</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+ 
+
+
+<div class="container">
+<form name="form">
+<div class="display">
+<input type="text" placeholder="0" name="displayResult" id="input" />
+</div>
+<div class="buttons">
+  <div class="row">
+  <input type="button" name="addbutton" value="+" onClick="calcNumbers(addbutton.value)">
+    <input type="button" name="button9" value="9" onClick="calcNumbers(button9.value)">
+    <input type="button" name="button8" value="8" onClick="calcNumbers(button8.value)">
+  <input type="button" name="button7" value="7" onClick="calcNumbers(button7.value)">
+</div>
+
+<div class="row"> 
+<input type="button" name="subtractbutton" value="-" onClick="calcNumbers(subtractbutton.value)">
+  <input type="button" name="button6" value="6" onClick="calcNumbers(button6.value)">
+  <input type="button" name="button5" value="5" onClick="calcNumbers(button5.value)">
+  <input type="button" name="button4" value="4" onClick="calcNumbers(button4.value)">
+</div>
+
+<div class="row">
+<input type="button" name="multiplybutton" value="*" onClick="calcNumbers(multiplybutton.value)">
+  <input type="button" name="button3" value="3" onClick="calcNumbers(button3.value)">
+  <input type="button" name="button2" value="2" onClick="calcNumbers(button2.value)">
+  <input type="button" name="button1" value="1" onClick="calcNumbers(button1.value)">
+</div>
+
+<div class="row">
+<input type="button" name="red" value="=" onClick="displayResult.value=eval(displayResult.value)">
+  <input type="button" name="dividebutton" value="/" onClick="calcNumbers(dividebutton.value)">
+  <input type="button" name="dotbutton" value="." onClick="calcNumbers(dotbutton.value)">
+  <input type="button" name="button0" value="0" onClick="calcNumbers(button0.value)">
+</div>
+<div class="row">
+  <input type="button" name="clearbutton" value="C" onClick="clr()">
+</div>
+
+</form>
+</div>
+
+</body>
+</html>
